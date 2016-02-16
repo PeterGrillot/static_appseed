@@ -1,0 +1,32 @@
+// breakpoints
+// site content width
+$max-content-width: 1200px;
+$min-1199:1199px;
+$max-lg: 1279px;
+$min-lg: 1280px;
+// breakpoint lg
+$min-md: 1024px;
+$max-md: 1023px;
+// breakpoint md
+$min-md:992px;
+$max-md:991px;
+// breakpoint sm
+$min-sm:768px;
+$max-sm:767px;
+// breakpoint xs
+$min-xs: 641px;
+$max-xs:640px;
+
+// PointBreak Mixin
+@mixin break($var...){	
+	@if length($var) == 4{
+		@media (#{nth($var,1)}-width : (#{nth($var,2)})) and (#{nth($var,3)}-width : (#{nth($var,4)})){
+			@content;
+		}
+	}
+	@if length($var) == 2{
+		@media (#{nth($var,1)}-width : (#{nth($var,2)})){
+			@content;
+		}
+	}
+}

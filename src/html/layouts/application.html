@@ -1,0 +1,19 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>{% block title %}Brightfind App Seed{% endblock %}</title>
+  <link rel="stylesheet" href="stylesheets/style.css">
+  {% block head %}{% endblock %}
+</head>
+<body>
+  <h1>Brightfind App Seed</h1>
+  {% include "shared/page-nav.html" %}
+  {% block content %}{% endblock %}
+  <footer>
+    <p>Footer</p>
+  </footer>
+  <script src="javascripts/shared.js"></script>
+  {% block javascript %}{% endblock %}
+</body>
+</html>
