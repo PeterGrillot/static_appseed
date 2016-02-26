@@ -1,0 +1,15 @@
+/*
+ * CSS Page Transitions
+ * Don't forget to add vendor prefixes!
+ */
+main{
+  visibility:hidden;
+}
+img{
+  float:left;
+  visibility:hidden;
+  margin:0 18px 18px 0;
+}
+.bounceIn, .fadeIn{
+  visibility: visible;
+}

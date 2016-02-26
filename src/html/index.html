@@ -1,9 +1,20 @@
+
 {% extends 'layouts/application.html' %}
 
 {% block content %}
-  <h1>Content</h1>
+
+{% include 'shared/navigation.html'%}
+
+<div class="container">
+    <div class="row">
+        <h1>Index Content</h1>
+        <p>This default example will not add page transitions to your page. See a typical implementation for an example of how to add a simple fade effect on your site. If you're feeling ambitious, check out an advanced example or go read the documentation.</p>
+    </div>
+</div>
+
 {% endblock %}
 
 {% block javascript %}
-<script src="javascripts/app.js"></script>
+
 {% endblock %}
+
